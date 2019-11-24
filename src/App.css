@@ -1,0 +1,336 @@
+html,
+body {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+h1 {
+  border-bottom: 1px solid #81ecec;
+  width: 60%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.header {
+  color: #2d3436;
+  background-color: white;
+}
+
+.header img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.slogan {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.slogan img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.links ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.links ul li {
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.links ul li:hover {
+  background-color: #2d3436;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.links ul li:hover a {
+  color: #81ecec;
+}
+.links ul li a {
+  display: inline-block;
+  padding: 25px 10px;
+  text-decoration: none;
+  color: #2d3436;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border-left: 1px solid #2d3436;
+}
+
+.links ul li:last-child a {
+  border-right: 1px solid #2d3436;
+}
+
+.img-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.img-container {
+  width: 300%;
+  display: flex;
+  position: relative;
+  animation: slider 15s infinite;
+}
+
+.slider img {
+  width: 33.33%;
+  height: auto;
+  display: block;
+}
+
+@keyframes slider {
+  0% {
+    left: 0px;
+  }
+  16% {
+    left: 0px;
+  }
+  32% {
+    left: -100%;
+  }
+  48% {
+    left: -100%;
+  }
+  64% {
+    left: -200%;
+  }
+  80% {
+    left: -200%;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.hakkimizda {
+  color: #2d3436;
+  background-color: #81ecec;
+}
+.hakkimizda h1 {
+  border-bottom: 1px solid #2d3436;
+}
+
+.hizmetler {
+  background-color: #2d3436;
+  color: #81ecec;
+}
+
+.misyonumuz {
+  background-color: #2d3436;
+  color: #81ecec;
+}
+
+.hizmetler .card {
+  border: none !important;
+  color: #2d3436;
+  background-color: #81ecec;
+  height: 100%;
+  padding: 0 !important;
+  box-shadow: -2px -2px 3px #81ecec;
+}
+
+.hizmetler .card-body {
+  padding: 4%;
+  border-bottom: 2px solid #2d3436;
+}
+
+.anlasmali-sirketler img {
+  width: 100%;
+  height: auto;
+}
+
+.phone {
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+y {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.fixed-content {
+  position: fixed;
+  bottom: 5%;
+  right: 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-content-top {
+  overflow: hidden;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 12px;
+  width: 170px;
+  height: 0px;
+  border: none;
+  background-color: white;
+  color: #2d3436;
+
+  border-radius: 5%;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);
+  transition: 0.7s ease;
+}
+
+.fixed-content-top.active {
+  border: #00b894 5px solid;
+  height: 40px;
+}
+
+.fixed-content-bottom {
+  width: 70px;
+  height: 70px;
+  padding: 2px;
+  margin-left: auto;
+  background-color: white;
+  color: #2d3436;
+  border: #00b894 5px solid;
+  border-radius: 50%;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.fixed-content-bottom img {
+  padding: 2px;
+  width: 90%;
+  height: 90%;
+}
+.fixed-content p {
+  font-size: 1.2rem;
+}
+
+.fixed-content a {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.d-flex {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+}
+
+.iletisim img {
+  width: 25px;
+  height: 40px;
+}
+
+@media (max-width: 994px) {
+  .links ul li a {
+    padding: 20px 5px;
+    font-size: 0.8rem;
+    border-left: 1px solid #2d3436;
+    letter-spacing: 0.3px;
+  }
+
+  .links ul li:last-of-type a {
+    border-right: 1px solid #2d3436;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .iletisim {
+    font-size: 0.9rem;
+  }
+
+  .slider img {
+    width: 33.33%;
+    height: 180px;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .header img {
+    height: auto;
+    width: 33%;
+    display: block;
+  }
+  .header .col-md-2 {
+    padding-bottom: 5px !important;
+  }
+
+  .slogan {
+    display: none;
+  }
+
+  .links {
+    padding-top: 0.25rem !important;
+    border-top: 1px solid #2d3436;
+  }
+
+  .links ul li a {
+    padding: 10px 3px;
+    font-size: 0.55rem;
+    border-left: none;
+    letter-spacing: 0.1px;
+  }
+
+  .links ul li:last-child a {
+    border-right: none;
+  }
+
+  .header .col-md-9 {
+    padding: 0 !important;
+  }
+
+  .links ul {
+    padding-top: 3px;
+    padding-right: 2px;
+    padding-left: 2px;
+    justify-content: space-between !important;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    padding: 0;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .hakkimizda {
+    padding: 25px !important;
+  }
+
+  .iletisim {
+    padding: 0;
+  }
+
+  .iletisim .col-md-4 {
+    border-bottom: #2d3436 1px solid;
+    padding: 6px 0px;
+  }
+  .iletisim .col-md-4:last-of-type {
+    border: none;
+  }
+
+  .slider img {
+    width: 33.33%;
+    height: 180px;
+    display: block;
+  }
+}
