@@ -1,2 +1,3 @@
+This is my first React JS project. The website has responsive design, contains Class based component and Functional components.
 
-<a href="https://giphy.com/gifs/ihfKKmPsleYkfy3XAa">via GIPHY</a></p>
+http://besiktasotomotiv.com
